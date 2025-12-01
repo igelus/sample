@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sample</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <div id="customAlert" class="modal-overlay">
+        <div class="window">
+            <div class="alert-box">
+                <div class="title-bar">
+                    <div class="title-bar-text">A Window With Stuff In It</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize" onclick="closeAlert()"></button>
+                        <button aria-label="Maximize" onclick="closeAlert()"></button>
+                        <button aria-label="Close" onclick="closeAlert()"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <p>Coming Soon!</p>
+                    <div style="display: flex; justify-content: right;">
+                        <button class="alert-ok-button" onclick="closeAlert()">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="window main-window">
+        <div class="title-bar">
+            <div class="title-bar-text">Sample - Main.exe</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <nav class="menu-bar" id="responsive-nav">
+                <a href="./index.html" class="menu-item">Home</a>
+                <a href="#about" class="menu-item" onclick="showAlert()">About</a>
+                <a href="#video" class="menu-item" onclick="showAlert()">video</a>
+                <a href="#video" class="menu-item" onclick="showAlert()">Help</a>
+            </nav>
+            <div id="SampleTitle">>>SAMPLE</div>
+            <div class="field-border">
+                <img class="title-banner" src="./src/parham-qaheri-FCnA-NcagRI-unsplash.jpg">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    const customAlert = document.getElementById('customAlert');
+    function showAlert() {
+        customAlert.classList.add('is-visible');
+        document.querySelector('.alert-ok-button').focus();
+    }
+
+    function closeAlert() {
+        customAlert.classList.remove('is-visible');
+    }
+</script>
+
+</html>
