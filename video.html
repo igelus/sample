@@ -22,8 +22,12 @@
                     </div>
                 </div>
                 <div class="window-body">
-                    <p>Coming Soon!</p>
-                    <div style="display: flex; justify-content: right;">
+                    <p>Need Help?</p>
+                    <p>Write us a DM on instagram</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <button id="instagram-link-button" aria-label="Instagram">
+                            Open Instagram
+                        </button>
                         <button class="alert-ok-button" onclick="closeAlert()">OK</button>
                     </div>
                 </div>
@@ -359,6 +363,11 @@
 </body>
 <script>
     const customAlert = document.getElementById('customAlert');
+    const instaButton = document.getElementById('instagram-link-button');
+
+    instaButton.addEventListener('click', function () {
+        window.open('https://www.instagram.com/samp.l3?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank');
+    });
     function showAlert() {
         customAlert.classList.add('is-visible');
         document.querySelector('.alert-ok-button').focus();
