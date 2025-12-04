@@ -33,14 +33,14 @@ body {
 
 .upcoming-wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-size: small;
 }
 
 .upcoming {
     width: 60%;
+    font-size: small;
 }
 
 .main-window {
