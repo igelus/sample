@@ -17,12 +17,96 @@ body {
     padding: 3px 8px;
 }
 
-#SampleTitle {
+.SampleTitle {
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
+}
+
+.crew-info-title {
+    margin-top: 50px;
+    margin-left: 5%;
+    font-size: small;
+}
+
+.crew-info-text {
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: small;
+}
+
+.values-body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.big-number-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-bottom: 15px;
+}
+
+.big-number {
+    font-size: 45px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.big-number-description {
+    font-size: small;
+    display: flex;
+    justify-content: center;
+}
+
+.big-number-image {
+    height: 30px;
+    width: 30px;
+}
+
+.big-number-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.big-number-card {
+    width: 300px;
+    margin-top: 10px;
+    /* Added for smooth transition */
+    transition: transform 0.3s ease-in-out;
+    /* Added to ensure the element can be transformed correctly */
+    transform-origin: center center;
+}
+
+/* New style for hover effect */
+.big-number-card:hover {
+    /* Adjust the scale value (e.g., 1.05 for 5% bigger) */
+    transform: scale(1.05);
+    /* Optional: Add a shadow to enhance the "lifted" effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional: Change cursor to indicate interactivity */
+    cursor: pointer;
+}
+
+.values-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: large;
+}
+
+.subtitle {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: large;
 }
 
 #instagram-advertise-wrapper {
@@ -58,6 +142,12 @@ body {
 
 .title-banner {
     width: 100%;
+}
+
+.about-banner {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* Full screen overlay to block interaction */
@@ -115,5 +205,20 @@ body {
 
     .upcoming {
         width: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    .big-number-card {
+        width: 30vw;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .big-number-card {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 10px;
     }
 }
