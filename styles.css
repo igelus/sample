@@ -31,7 +31,7 @@ body {
     margin-top: 15px;
 }
 
-#upcoming-wrapper {
+.upcoming-wrapper {
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
@@ -39,8 +39,8 @@ body {
     font-size: small;
 }
 
-#upcoming {
-    width: 400px;
+.upcoming {
+    width: 60%;
 }
 
 .main-window {
@@ -92,5 +92,9 @@ body {
         margin: 0;
         box-shadow: none;
         border: none;
+    }
+
+    .upcoming {
+        width: 100%;
     }
 }
