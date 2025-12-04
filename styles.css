@@ -10,6 +10,7 @@ body {
     flex-wrap: nowrap;
     justify-content: flex-start;
     width: 100%;
+    font-size: small;
 }
 
 #responsive-nav .menu-item {
@@ -24,11 +25,35 @@ body {
     font-weight: bold;
 }
 
+#instagram-advertise-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#upcoming-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: small;
+}
+
+#upcoming {
+    width: 400px;
+}
+
 .main-window {
     width: 80%;
     max-width: 800px;
     height: auto;
     min-height: 400px;
+}
+
+.instagram-advertise {
+    display: flex;
+    align-items: center;
+    font-size: medium;
 }
 
 .title-banner {
