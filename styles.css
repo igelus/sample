@@ -85,6 +85,23 @@ body {
     /* Show the overlay */
 }
 
+.footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 13px;
+    margin-right: 20px;
+}
+
+.instagram-link {
+    margin-left: 10px;
+    font-size: small;
+}
+
+.Sample-name-footer {
+    margin-left: 10px;
+}
+
 @media (max-width: 600px) {
     .main-window {
         width: 100%;
