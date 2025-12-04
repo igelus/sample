@@ -76,6 +76,12 @@ body {
     margin-top: 15px;
 }
 
+.title-banner-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+}
+
 .big-number-card {
     width: 300px;
     margin-top: 10px;
@@ -220,5 +226,11 @@ body {
         width: 100%;
         max-width: 300px;
         margin-top: 10px;
+    }
+
+    .title-banner-container {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50px;
     }
 }
